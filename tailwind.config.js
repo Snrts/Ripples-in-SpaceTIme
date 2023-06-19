@@ -5,15 +5,15 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      "white": "#fff",
-      "black": "#000",
-      "blue": {
-        "100": "#C8F0F1",
-        "200": "#29ABE2",
-        "300": "#035279",
-        "400": "#023047",
+      'white': '#ffffff',
+      'black': "#000",
+      'blue': {
+        100: '#c8f0f1',
+        200: '#035279',
+        300: '#023047',
+        // 400: '#023047',
       },
-      "orange": "#E79B25"
+      "orange": '#E79B25'
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
@@ -21,7 +21,7 @@ module.exports = {
     fontSize: {
       sm: '0.8rem',
       base: '1rem',
-      xl: '1.25rem',
+      'xl': '1.25rem',
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       '4xl': '2.441rem',
