@@ -6,26 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ripples In Spacetime</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
-<!-- <body> -->
 <body class="bg-blue-100">
-    <header class=" grid grid-cols-2 col-auto pt-8">
-        <a href="index.html" class="text-4xl ml-8 tracking-widest font-bold text-wrap  text-blue-300 col-start-1">
-            RIPPLES IN SPACETIME
-        </a>
-        <div class="flex flex-row place-content-between text-blue-300 font-bold text-xl tracking-widest mr-8">
-            <a href="demonstrations.html" class="hover:underline">DEMONSTRATIONS</a>
-            <a href="posters.html" class="hover:underline">POSTERS</a>
-            <a href="project.html" class="hover:underline">ABOUT THE PROJECT</a>
-            <a href="about.html" class="hover:underline">ABOUT</a>
-            <a href="contact.html" class="hover:underline">CONTACT</a>
+    <div class="text-blue-300 h-[60px] lg:h-[73px] w-full bg-white ">
+        <nav class="z-50 fixed top-0 left-0 w-full bg-white  px-2 sm:px-4 py-2.5 rounded ">
+            <ul class="flex flex-wrap text-blue-300 mt-[17px] text-2xl justify-between w-full">
+            <li class="block">
+                <a href="index.html" class="text-4xl ml-8 block tracking-widest font-bold text-wrap text-blue-300">
+                RIPPLES IN SPACETIME
+            </a></li>
+            
+            <ul class="flex flex-wrap text-blue-300 mt-[17px] text-2xl justify-between">
+                <li class="mr-10 inline-block"><a href="demonstrations.html" class=" hover:underline">DEMONSTRATIONS</a></li>
+                <li class="mr-10"><a href="posters.html" class="inline-block hover:underline">POSTERS</a></li>
+                <li class="mr-10"><a href="project.html" class="inline-block hover:underline">ABOUT THE PROJECT</a></li>
+                <li class="mr-10"><a href="about.html" class="inline-block hover:underline">ABOUT</a></li>
+                <li class="mr-10"><a href="contact.html" class="inline-block hover:underline">CONTACT</a></li>
+            </ul></ul>
         </div>
-    </header>
-    <!-- <object data="Copy of Studying the Early universe.pdf" type="application/pdf" class="w-1/2 mx-auto my-20" height="2000px" style="border:none">
-        <p>Unable to display PDF file. <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.</p>
-    </object> -->
-    <iframe src="Copy of Studying the Early universe.pdf#toolbar=0" class="w-1/2 mx-auto my-20 overflow-hidden" height="2000px" >
-       
-    </iframe>
+        </nav>
+        </div>
+    <form id="form" method="get">
+        <select
+            name="inputbox"
+            class="mb-5 p-2 text-lg block w-1/3"
+            id="dropdown"
+            title="Languages"
+            size="5">
+        </select>
+        <input class="text-blue-600 bg-white p-2 rounded-md"
+                            type="button"
+                            id="submit"
+                            value="submit">
+    </form>
+    
+    <iframe
+    src="english.pdf#toolbar=0&navpanes=0&scrollbar=hidden&zoom=98" 
+    id="iframe" 
+    zoom="100%"
+    height="2000px"
+    width="850px"
+    class="mx-auto my-20 overflow-hidden ">  
+</iframe>
+<script src="posters.js"></script>
 </body>
 </html>
