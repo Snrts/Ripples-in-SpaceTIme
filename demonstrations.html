@@ -26,10 +26,22 @@
         </div>
         </nav>
         </div>
-    <div class="mx-auto p-10 grid grid-cols-2 gap-4 w-fit">
+    <!-- <div class="mx-auto p-10 grid grid-cols-2 gap-4 w-fit">
         <video src="vids/sn2.mp4" class="inline-block" controls></video>
         <video src="vids/sn.mp4" class="inline-block" controls></video>
         <video src="vids/sn3.mp4" class="col-span-2 mx-auto" controls></video>
+    </div> -->
+
+    <div class="mx-auto h-72 rounded-xl">
+        <video autoplay muted loop class="top-0 relative">
+            <source src="vids/sn2.mp4" type="video/mp4">
+        </video>
+        <div class=" bg-white/40 backdrop-blur-sm relative bottom-0 h-fit w-full">
+            <h1>Heading</h1>
+            <p>Lorem ipsum...</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
     </div>
     </body>
 

@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      'white': '#ffffff',
+      'white': '#fff',
       'black': "#000",
       'blue': {
         100: '#c8f0f1',
@@ -25,7 +25,7 @@ module.exports = {
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       '4xl': '2.441rem',
-      '5xl': '48.6pt',
+      '5xl': '64.6pt',
     },
     letterSpacing: {
       tightest: '-.075em',
