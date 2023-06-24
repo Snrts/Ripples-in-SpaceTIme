@@ -9,8 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body class="bg-white">
-  <div class="text-white block h-fit w-full bg-blue-300 ">
-    <nav class="z-50  top-0 left-0 w-full bg-blue-300  px-2 sm:px-4 py-2.5 rounded text-white">
+  <div class="text-white block h-fit w-full bg-themeblue-300 ">
+    <nav class="z-50  top-0 left-0 w-full bg-themeblue-300  px-2 sm:px-4 py-2.5 rounded text-white">
       <ul class="flex flex-wrap mt-[17px] text-2xl justify-between w-full">
         <li class="block">
           <a href="index.html" class="text-4xl block tracking-widest font-bold text-wrap text-white">
@@ -26,36 +26,107 @@
           </ul></ul>
       </nav>
     </div>
-
-    <div class="fixed left-0 w-[100vw] text-blue-300">
+    <div class="flex items-start w-full">
+    <div class="fixed w-1/3 left-0 text-themeblue-300">
     <form 
       id="form" 
       method="get" 
-      class="w-1/5 bg-orange mr-0 p-5 grid grid-cols-2 place-items-center rounded-xl m-5 my-16 gap-2">
-        <select
+      class=" bg-themeorange mr-0 p-5 grid grid-cols-2 gap-2 place-items-center rounded-xl mx-2 my-16">
+      <div class="flex flex-row  w-full col-span-2 ">
+        <p class="bg-white flex-1 w-full inline-block rounded-l-xl p-2 text-lg">Language:</p>  
+      <!-- <select
           name="inputbox"
-          class="p-2 text-lg inline-block w-full rounded-xl col-span-2"
+          class="p-2 text-lg border-white font-bold flex-2 inline-block w-full rounded-r-xl col-span-3"
           id="dropdown"
           title="Languages"
           size="1">
-        </select>
-        <input 
-          class="text-blue-300 bg-white px-2 rounded-lg  inline-block w-full"
+          <option value="english">English <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></option>
+          <option value="dutch"><div class="rounded-full overflow-hidden h-3 w-3">
+            <div>
+            <div style="background-color: crimson;" class="h-1 w-3"></div> 
+            <div style="background-color: white;" class="h-1 w-3"></div> 
+            <div style="background-color: blue;" class="h-1 w-3"></div> 
+            Dutch</div>
+          </option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+        </select></div> -->
+        
+<!--         
+          <ul class="w-full flex-3">
+        <li><input type="radio" id="english" name="language" value="english" checked>
+        <label for="english">English <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></label><br></li>
+        <li><input type="radio" id="dutch" name="language" value="dutch">
+        <label for="english">Dutch <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></label><br></li>
+        <li><input type="radio" id="german" name="language" value="german">
+        <label for="english">German <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></label><br></li>
+        <li><input type="radio" id="french" name="language" value="french">
+        <label for="english">French <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></label><br></li>
+      </ul>   -->
+ 
+      
+<ul>
+    <li>
+        <input type="radio" id="english" name="languages" value="english" class="hidden peer">
+        <label for="hosting-small" class="inline-flex items-center justify-between w-full p-5 bg-white border-white rounded-lg cursor-pointer peer-checked:border-themeblue-300 peer-checked:text-themeblue-300 hover:text-themeblue-300 border-themeblue-300 hover:bg-themeblue-100 ">                           
+            <div class="block">
+                <div class="w-full text-lg font-semibold">English <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></div>
+            </div>
+        </label>
+    </li>
+    <li>
+        <input type="radio" id="dutch" name="languages" value="dutch" class="hidden peer">
+        <label for="dutch" class="inline-flex items-center justify-between w-full p-5 bg-white border border-white rounded-lg cursor-pointer peer-checked:border-themeblue-300 peer-checked:text-themeblue-300 hover:text-themeblue-300 border-themeblue-300 hover:border-themeblue-300">                           
+            <div class="block">
+                <div class="w-full text-lg font-semibold">Dutch <div class="rounded-full overflow-hidden h-3 w-3 inline-block">
+                  <div>
+                  <div style="background-color: crimson;" class="h-1 w-3"></div> 
+                  <div style="background-color: white;" class="h-1 w-3"></div> 
+                  <div style="background-color: blue;" class="h-1 w-3"></div> 
+                  </div></div>
+            </div>
+        </label>
+    </li>
+    <li>
+        <input type="radio" id="german" name="languages" value="german" class="hidden peer">
+        <label for="german" class="inline-flex items-center justify-between w-full p-5 bg-white border border-white rounded-lg cursor-pointer peer-checked:border-themeblue-300 peer-checked:text-themeblue-300 hover:text-themeblue-300 border-themeblue-300 hover:border-themeblue-300">                           
+            <div class="block">
+                <div class="w-full text-lg font-semibold">German <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></div>
+            </div>
+           
+        </label>
+    </li>
+    <li>
+        <input type="radio" id="french" name="languages" value="french" class="hidden peer">
+        <label for="french" class="inline-flex items-center justify-between w-full p-5 bg-white border border-white rounded-lg cursor-pointer peer-checked:border-themeblue-300 peer-checked:text-themeblue-300 hover:text-themeblue-300 border-themeblue-300 hover:border-themeblue-300">                           
+            <div class="block">
+                <div class="w-full text-lg font-semibold">English <div class="h-3 w-3 rounded-full overflow-hidden bg-cover bg-center inline-block" style="background-image: url(static/Flag_of_the_United_Kingdom.svg);"></div></div>
+            </div>
+            <svg aria-hidden="true" class="w-6 h-6 ml-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </label>
+    </li>
+    
+  
+</ul>     </div>
+      <input 
+          class=" m-2 text-themeblue-300 bg-white px-2 rounded-lg  inline-block w-full"
           type="button"
           id="submit"
-          value="submit">
-        <a 
+          value="Submit">
+        <div class="mx-auto text-themeblue-300 bg-white rounded-lg text-center inline-block w-full container">
+          <a 
           target="_blank" 
           rel="noopener"
-          class="text-blue-300 bg-white rounded-lg justify-center inline-block w-full"
-          href="posters/dutch.pdf">Download
+          href="posters/dutch.pdf">Download 
         </a>
+      </div>
   </form>  
   </div> 
 
-<div class="inline-block top-0">
+<div class="absolute top-0 right-0 flex-3">
   <img class="mx-auto" style="scale: 0.8;" src="static/Studying the Early universe.png"/>
-</div>
+</div></div>
 <script src="scripts/posters.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

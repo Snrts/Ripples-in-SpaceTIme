@@ -1,19 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.html", "./src/**/*.js"],
+  content: ["*.html", "./src/**/*.js", "./node_modules/flowbite/**/*.js"],
   theme: {
     colors: {
       transparent: "transparent",
       current: "currentColor",
       'white': '#fff',
       'black': "#000",
-      'blue': {
+      'themeblue': {
         100: '#c8f0f1',
         200: '#035279',
         300: '#023047',
         // 400: '#023047',
       },
-      "orange": '#E79B25'
+      "themeorange": '#E79B25'
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
@@ -59,6 +59,8 @@ module.exports = {
       
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
