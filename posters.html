@@ -8,83 +8,54 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
-<body class="bg-blue-300">
-    <div class="text-blue-300 h-[60px] lg:h-[73px] w-full bg-blue-100 ">
-        <nav class="z-50 fixed top-0 left-0 w-full bg-blue-100  px-2 sm:px-4 py-2.5 rounded ">
-            <ul class="flex flex-wrap text-blue-300 mt-[17px] text-2xl justify-between w-full">
-            <li class="block">
-                <a href="index.html" class="text-4xl ml-8 block tracking-widest font-bold text-wrap text-blue-300">
-                RIPPLES IN SPACETIME
-            </a></li>
-            
-            <ul class="flex flex-wrap text-blue-300 mt-[17px] text-2xl justify-between">
-                <li class="mr-10 inline-block"><a href="demonstrations.html" class=" hover:underline">DEMONSTRATIONS</a></li>
-                <li class="mr-10"><a href="posters.html" class="inline-block hover:underline">POSTERS</a></li>
-                <li class="mr-10"><a href="project.html" class="inline-block hover:underline">ABOUT THE PROJECT</a></li>
-                <li class="mr-10"><a href="about.html" class="inline-block hover:underline">ABOUT</a></li>
-                <li class="mr-10"><a href="contact.html" class="inline-block hover:underline">CONTACT</a></li>
-            </ul></ul>
-        </div>
-        </nav>
-        </div>
-    <form id="form" method="get" class="w-1/5 bg-blue-100 p-5 grid grid-cols-3 place-items-center rounded-xl m-5 my-16 gap-2">
+<body class="bg-white">
+  <div class="text-white block h-fit w-full bg-blue-300 ">
+    <nav class="z-50  top-0 left-0 w-full bg-blue-300  px-2 sm:px-4 py-2.5 rounded text-white">
+      <ul class="flex flex-wrap mt-[17px] text-2xl justify-between w-full">
+        <li class="block">
+          <a href="index.html" class="text-4xl block tracking-widest font-bold text-wrap text-white">
+            RIPPLES IN SPACETIME
+          </a></li>
+          
+          <ul class="flex flex-wrap mt-[17px] text-xl justify-between">
+            <li class="mr-10 inline-block"><a href="demonstrations.html" class=" hover:underline">DEMONSTRATIONS</a></li>
+            <li class="mr-10"><a href="posters.html" class="inline-block hover:underline">POSTERS</a></li>
+            <li class="mr-10"><a href="project.html" class="inline-block hover:underline">ABOUT THE PROJECT</a></li>
+            <li class="mr-10"><a href="about.html" class="inline-block hover:underline">ABOUT</a></li>
+            <li class="mr-10"><a href="contact.html" class="inline-block hover:underline">CONTACT</a></li>
+          </ul></ul>
+      </nav>
+    </div>
+
+    <div class="fixed left-0 w-[100vw] text-blue-300">
+    <form 
+      id="form" 
+      method="get" 
+      class="w-1/5 bg-orange mr-0 p-5 grid grid-cols-2 place-items-center rounded-xl m-5 my-16 gap-2">
         <select
-            name="inputbox"
-            class="p-2 text-lg inline-block w-full rounded-xl col-span-2"
-            id="dropdown"
-            title="Languages"
-            size="1">
+          name="inputbox"
+          class="p-2 text-lg inline-block w-full rounded-xl col-span-2"
+          id="dropdown"
+          title="Languages"
+          size="1">
         </select>
-        <input class="text-blue-600 bg-white p-2 rounded-xl  inline-block w-full"
-                            type="button"
-                            id="submit"
-                            value="submit">
-    </form>   
-    <iframe
-    src="english.pdf#toolbar=0&navpanes=0&scrollbar=hidden&zoom=98" 
-    id="iframe"
-    name="iframe"
-    zoom="100%"
-    height="2000px"
-    width="850px"
-    allowtransparency="true"
-    style="background:red;"
-    class="mx-auto my-20 overflow-hidden ">  
-</iframe>
+        <input 
+          class="text-blue-300 bg-white px-2 rounded-lg  inline-block w-full"
+          type="button"
+          id="submit"
+          value="submit">
+        <a 
+          target="_blank" 
+          rel="noopener"
+          class="text-blue-300 bg-white rounded-lg justify-center inline-block w-full"
+          href="posters/dutch.pdf">Download
+        </a>
+  </form>  
+  </div> 
 
-
-<div class="relative m-auto w-1/4">
-
-    <div class="hidden">
-      <div class="absolute">1 / 3</div>
-      <img class="brightness-50 h-fit w-fit  tags" src="src/etpathfinder-background.jpg">
-      <div class="text">Caption Text</div>
-    </div>
-    <!-- <img class="h-fit w-fit brightness-100" src="src/etpathfinder-background.jpg" style="width:100%"> -->
-    <div class="hidden">
-      <div class="absolute">2 / 3</div>
-      <img class="h-fit w-fit tags" src="src/etpathfinder-background.jpg">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="hidden">
-      <div class="absolute">3 / 3</div>
-      <img  class="h-fit w-fit tags"src="src/etpathfinder-background.jpg">
-      <div class="absolute">Caption Three</div>
-    </div>
-
-    <a class="absolute bg-white p-16 top-1/2 w-fit cursor-pointer right-0" onclick="plusSlides(-1)">&#10095;</a>
-    <a class="absolute bg-white p-16 top-1/2 w-fit cursor-pointer left-0" onclick="plusSlides(1)">&#10094;</a>
-  </div>
-  <br>
-  
-
-  <div style="text-align:center">
-    <span class="dot cursor-pointer bg-white inline-block active:bg-blue-200" onclick="currentSlide(1)"></span>
-    <span class="dot cursor-pointer bg-white inline-block active:bg-blue-200" onclick="currentSlide(2)"></span>
-    <span class="dot cursor-pointer bg-white inline-block active:bg-blue-200" onclick="currentSlide(3)"></span>
-  </div>
-  
-<script src="posters.js"></script>
+<div class="inline-block top-0">
+  <img class="mx-auto" style="scale: 0.8;" src="static/Studying the Early universe.png"/>
+</div>
+<script src="scripts/posters.js"></script>
 </body>
 </html>
