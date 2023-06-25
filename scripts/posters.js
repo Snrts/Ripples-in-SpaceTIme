@@ -1,5 +1,3 @@
-// $("#iframe").contents().find("body").style.backgroundcolor = "red";
-
 
 function loadDropdown() {
     var languages = ['Dutch', 'English', 'German', 'French'];              //fetches the diseases by running the function from the queries.js
@@ -29,5 +27,6 @@ $("#submit").on("click", function () {
     });
 
   /*______________________________________________________________________________________________________________________________________________*/  
- 
-  
+function changeLanguage(language) {
+  $("#universe").attr("src", "posters/" + language + "universe.png");
+}
