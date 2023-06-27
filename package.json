@@ -9,5 +9,5 @@
   },
   "scripts": {
     "prettier": "./node_modules/.bin/prettier —-write '**/*.js'"
-   }
+  }
 }
