@@ -28,5 +28,9 @@ $("#submit").on("click", function () {
 
   /*______________________________________________________________________________________________________________________________________________*/  
 function changeLanguage(language) {
-  $("#universe").attr("src", "posters/" + language + "universe.png");
+  $("#earlyuniverse").attr("src", "posters/" + language + "earlyuniverse.png");
+  $("#sources").attr("src", "posters/" + language + "sources.png");
+  $("#propegation").attr("src", "posters/" + language + "propegation.png");
+  $("#detection").attr("src", "posters/" + language + "detection.png");
+ 
 }

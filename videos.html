@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ripples In Spacetime</title>
     <link href="/dist/output.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
@@ -23,7 +22,7 @@
           <ul class="flex flex-wrap mt-[17px] text-xl justify-between">
             <li class="mr-10 inline-block"><a href="demonstrations.html" class=" hover:underline">DEMONSTRATIONS</a></li>
             <li class="mr-10"><a href="posters.html" class="inline-block hover:underline">POSTERS</a></li>
-            <li class="mr-10"><a href="videos.html" class="inline-block hover:underline">ABOUT THE videos</a></li>
+            <li class="mr-10"><a href="videos.html" class="inline-block hover:underline">VIDEOS</a></li>
             <li class="mr-10"><a href="about.html" class="inline-block hover:underline">ABOUT</a></li>
             <li class="mr-10"><a href="contact.html" class="inline-block hover:underline">CONTACT</a></li>
           </ul></ul>
@@ -31,65 +30,100 @@
   </div>
   <!-- Navbar End -->
   <!--  -->
-  <div class="px-10 flex flex-wrap">
-    <div class="w-1/2 bg-themeblue-300 rounded-t-lg">
-    <div class="justify-start grid grid-cols-3 mt-5 w-1/2 mx-auto  px-5 pb-5 rounded-lg ">
-    
-      <span class="ml-3 h-6 text-sm font-medium text-white">Video</span>
-      <div class="flex flex-row items-center justify-between w-1/4">
-      <label class="relative inline-flex items-center cursor-pointer">
-        <input type="checkbox" value="" class="sr-only peer" id="earth" onchange="changeVideo(this.id)">
-        <div class="w-11 h-6 bg-themeblue-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-themeblue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-themeorange"></div>
-      </label>
-    </div>
-      <span class="ml-3 h-6 text-sm font-medium text-white">Hologram</span>
-    </div>
-    <video class="w-full" src="videos/earth.mp4" id="earthvid" controls>
-
-      </video>
-    
-  </div>
-    <div class="bg-themeblue-300 mt-5 w-1/2 mx-auto pt-10 px-5 pb-5 rounded-lg">
-    <div class="flex flex-row items-center justify-between w-1/4 m-2">
-      <span class="ml-3 text-sm font-medium text-white">Video</span>
-      <label class="relative inline-flex items-center cursor-pointer">
-        
-        <input type="checkbox" value="" class="sr-only peer" id="bh" onchange="changeVideo(this.id)">
-        <div class="w-11 h-6 bg-themeblue-100 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-themeblue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-themeorange"></div>
-      </label>
-      <span class="ml-3 text-sm font-medium text-white">Hologram</span>
-    </div>
-    <video class="w-full" src="videos/bh.mp4" id="bhvid" controls>
-        <!-- <source src="videos/earth.mp4" type="video/mp4"> -->
-      </video>
-    </div></div>
-    <!-- <div class="bg-themeblue-300 mt-5 w-1/2 mx-auto pt-10 px-5 pb-5 rounded-lg">
-    <div class="flex flex-row items-center justify-between w-1/4 m-2">
-      <span class="ml-3 text-sm font-medium text-white">Video</span>
-      <label class="relative inline-flex items-center cursor-pointer">
-        
-        <input type="checkbox" value="" class="sr-only peer">
-        <div class="w-11 h-6 bg-themeblue-100 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-themeblue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-themeorange"></div>
-      </label>
-      <span class="ml-3 text-sm font-medium text-white">Hologram</span>
-    </div>
-    <video class="w-full" controls>
-        <source src="videos/earth.mp4" type="video/mp4">
-      </video>
-    </div>
-    </div> -->
-      </div>
-      <div>
-
-        <div class='flex max-w-sm w-full bg-themeblue-200 shadow-md rounded-lg overflow-hidden mx-auto'>
+  <div class="p-10 grid grid-cols-2 w-full gap-6">
+        <div class='flex max-w-md w-full bg-white shadow-xl shadow-themeorange rounded-lg overflow-hidden mx-auto'>
             <div class="flex flex-col m-5 ">
                 <div class="relative w-[350px] h-[200px]">
                   <video class="object-cover"  id="earthvid" loop>
                     <source  src='videos/earth.mp4' type='video/mp4' >
                   </video>
-                  <div class="absolute bottom-0 w-full bg-gradient-to-r from-white">
-                  <span class="text-black text-xs uppercase px-2">
-                    GRAVITATIONAL WAVE PASSING THOUGH EARTH
+                  <div class="absolute bottom-0 w-full bg-gradient-to-r from-themeorange">
+                  <span class="text-white text-xs uppercase px-2">
+                        GRAVITATIONAL WAVE PASSING THOUGH EARTH
+                </span></div>
+                </div>
+        <div class="flex justify-around pt-5 text-xs font-medium text-gray-500 py-1">
+            <button class="rounded-full  w-8 h-8 flex items-center justify-center  ring-2 ring-themeorange focus:outline-none" id="earthplay" onclick="toggleplay(this.id)">
+              <svg class="pl-0.5 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#E79B25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            <button class="rounded-full  flex items-center justify-center  focus:outline-none" id="earthfull" onclick="goFullscreen(this.id)">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.55em"  fill="#E79B25"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"/></svg>
+            </button>
+        </div>
+        <div class="flex w-2/5 flex-row text-xs align-middle justify-between">
+            <p>Video</p>
+            <label class="relative inline-flex align-middle cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" id="earth" onchange="changeVideo(this.id)">
+              <div class="w-11 h-6 bg-blue-300/50 shadow-lg peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-themeblue-300 ring-1 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-themeorange"></div>
+            </label>
+          Hologram</div></div>
+   <!-- Footer -->
+        </div>
+        <div class='flex max-w-sm w-full bg-white shadow-xl shadow-themeorange rounded-lg overflow-hidden mx-auto'>
+            <div class="flex flex-col m-5 ">
+                <div class="relative w-[350px] h-[200px]">
+                  <video class="object-cover"  id="earthvid" loop>
+                    <source  src='videos/earth.mp4' type='video/mp4' >
+                  </video>
+                  <div class="absolute bottom-0 w-full bg-gradient-to-r from-themeorange">
+                  <span class="text-white text-xs uppercase px-2">
+                        GRAVITATIONAL WAVE PASSING THOUGH EARTH
+                </span></div>
+                </div>
+        <div class="flex justify-around pt-5 text-xs font-medium text-gray-500 py-1">
+            <button class="rounded-full  w-8 h-8 flex items-center justify-center  ring-2 ring-themeorange focus:outline-none" id="earthplay" onclick="toggleplay(this.id)">
+              <svg class="pl-0.5 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#E79B25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            <button class="rounded-full  flex items-center justify-center  focus:outline-none" id="earthfull" onclick="goFullscreen(this.id)">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.55em"  fill="#E79B25"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"/></svg>
+            </button>
+        </div>
+        <div class="flex w-2/5 flex-row text-xs align-middle justify-between">
+            <p>Video</p>
+            <label class="relative inline-flex align-middle cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" id="earth" onchange="changeVideo(this.id)">
+              <div class="w-11 h-6 bg-blue-300/50 shadow-lg peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-themeblue-300 ring-1 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-themeorange"></div>
+            </label>
+          Hologram</div></div>
+   <!-- Footer -->
+        </div>
+        <div class='flex max-w-sm w-full bg-white shadow-xl shadow-themeorange rounded-lg overflow-hidden mx-auto'>
+            <div class="flex flex-col m-5 ">
+                <div class="relative w-[350px] h-[200px]">
+                  <video class="object-cover"  id="earthvid" loop>
+                    <source  src='videos/earth.mp4' type='video/mp4' >
+                  </video>
+                  <div class="absolute bottom-0 w-full bg-gradient-to-r from-themeorange">
+                  <span class="text-white text-xs uppercase px-2">
+                        GRAVITATIONAL WAVE PASSING THOUGH EARTH
+                </span></div>
+                </div>
+        <div class="flex justify-around pt-5 text-xs font-medium text-gray-500 py-1">
+            <button class="rounded-full  w-8 h-8 flex items-center justify-center  ring-2 ring-themeorange focus:outline-none" id="earthplay" onclick="toggleplay(this.id)">
+              <svg class="pl-0.5 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#E79B25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            <button class="rounded-full  flex items-center justify-center  focus:outline-none" id="earthfull" onclick="goFullscreen(this.id)">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.55em"  fill="#E79B25"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"/></svg>
+            </button>
+        </div>
+        <div class="flex w-2/5 flex-row text-xs align-middle justify-between">
+            <p>Video</p>
+            <label class="relative inline-flex align-middle cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" id="earth" onchange="changeVideo(this.id)">
+              <div class="w-11 h-6 bg-blue-300/50 shadow-lg peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-themeblue-300 ring-1 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-themeorange"></div>
+            </label>
+          Hologram</div></div>
+   <!-- Footer -->
+        </div>
+        <div class='flex max-w-sm w-full bg-white shadow-xl shadow-themeorange rounded-lg overflow-hidden mx-auto'>
+            <div class="flex flex-col m-5 ">
+                <div class="relative w-[350px] h-[200px]">
+                  <video class="object-cover"  id="earthvid" loop>
+                    <source  src='videos/earth.mp4' type='video/mp4' >
+                  </video>
+                  <div class="absolute bottom-0 w-full bg-gradient-to-r from-themeorange">
+                  <span class="text-white text-xs uppercase px-2">
+                        GRAVITATIONAL WAVE PASSING THOUGH EARTH
                 </span></div>
                 </div>
         <div class="flex justify-around pt-5 text-xs font-medium text-gray-500 py-1">

@@ -16,7 +16,7 @@ function toggleplay(id) {
         button.innerHTML = '<div class="border-x-4 w-3  border-themeorange h-4"></div>';
         video.play();
     } else {
-        button.innerHTML = '<svg class="w-5 h-5 pl-0.5" viewBox="0 0 24 24" fill="none" stroke="#E79B25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>';
+        button.innerHTML = '<svg class="w-5 h-5 pl-0.5 border-themeorange" viewBox="0 0 24 24" fill="none" stroke="#E79B25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>';
         video.pause();
     }
 }
