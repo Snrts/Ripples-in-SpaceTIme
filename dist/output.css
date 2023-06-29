@@ -2661,4 +2661,8 @@ input:checked + .toggle-bg {
   .lg\:hidden {
     display: none;
   }
+
+  .lg\:text-2xl {
+    font-size: 1.563rem;
+  }
 }
