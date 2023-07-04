@@ -2,19 +2,8 @@
 module.exports = {
   content: ["*.html", "./src/**/*.js", "./node_modules/flowbite/**/*.js", "src/**/*.{html,js}"],
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      'white': '#fff',
-      'black': "#000",
-      'themeblue': {
-        100: '#c8f0f1',
-        200: '#035279',
-        300: '#023047',
-        // 400: '#023047',
-      },
-      "themeorange": '#E79B25'
-    },
+    
+    
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
     },
@@ -56,7 +45,23 @@ module.exports = {
     },
   
     extend: {
-      
+      colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      'white': '#fff',
+      'black': "#000",
+      'themeblue': {
+        100: '#c8f0f1',
+        200: '#035279',
+        300: '#023047',
+        // 400: '#023047',
+      },
+      "themeorange": '#E79B25'
+      },
+    //   cursor: {
+    //     default: 'url(gal.cur), default'
+    //     // default: 'url(bh.svg), default'
+    // },
     },
   },
   plugins: [
