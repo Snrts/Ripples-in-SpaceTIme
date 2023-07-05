@@ -1,2 +1,0 @@
-!function(){for(let t of["Dutch","English","German","French"])$("#dropdown").append($(document.createElement("option")).prop({value:t.charAt(0).toLowerCase()+t.slice(1),text:t}));$(function(){var t=$("#dropdown");t.html(t.find("option").sort(function(t,o){return $(t).text()>$(o).text()?1:-1}))})}(),$("#submit").on("click",function(){var t=$("select option:selected");t=t.val(),$("#iframe").attr("src",t+".pdf#toolbar=0&navpanes=0&scrollbar=hidden&zoom=98")});
-//# sourceMappingURL=posters.61ccf983.js.map

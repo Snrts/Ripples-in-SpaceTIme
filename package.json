@@ -5,7 +5,7 @@
     "start": "parcel ./*.html",
     "build": "parcel build",
     "deploy": "gh-pages -d dist",
-    "tw": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "tw": "npx tailwindcss -i ./src/stylesheets/input.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
